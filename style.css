@@ -32,6 +32,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 section #setting {
@@ -47,7 +48,7 @@ section #setting {
 }
 
 .menuSw img{
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.35rem;
 }
 
 
