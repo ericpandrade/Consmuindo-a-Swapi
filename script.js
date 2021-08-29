@@ -73,3 +73,32 @@ fillTable = () => {
 };
 
 fillTable();
+
+/* PIECHART */
+google.charts.load("current", { packages: ["corechart"] });
+google.charts.setOnLoadCallback(drawChart);
+
+async function drawChart() {
+  const dataPlanets = getData("planets");
+  const planetsInformations = await dataPlanets;
+  const planet = planetsInformations.results;
+  dataArray = [
+    ["PlanetName", "Diameter"],
+    [planet[5].name, Number(planet[5].diameter)],
+    [planet[9].name, Number(planet[9].diameter)],
+    [planet[8].name, Number(planet[1].diameter)],
+    [planet[7].name, Number(planet[0].diameter)],
+    [planet[1].name, Number(planet[2].diameter)],
+  ];
+  var data = google.visualization.arrayToDataTable(dataArray);
+
+  var options = {
+    title: "Top 5 of biggest planets",
+  };
+
+  var chart = new google.visualization.PieChart(
+    document.getElementById("piechart")
+  );
+
+  chart.draw(data, options);
+}

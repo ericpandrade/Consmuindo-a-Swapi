@@ -23,6 +23,12 @@
     <!-- STYLE -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- GOOGLE CHART -->
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+
     <title>Swapi</title>
   </head>
   <body>
@@ -97,23 +103,27 @@
             </div>
           </div>
         </div>
-
-        <div id="table">
-          <div id="table-introduction">
-            <h1 id="table-title">Últimos Filmes</h1>
-            <h2>Saiba os últimos lançamentos da marca</h2>
+        <div id="tableAndPieceChart">
+          <div id="table">
+            <div id="table-introduction">
+              <h1 id="table-title">Últimos Filmes</h1>
+              <h2>Saiba os últimos lançamentos da marca</h2>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Título</th>
+                  <th>Estréia</th>
+                  <th>Diretor</th>
+                  <th>Episode</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-js"></tbody>
+            </table>
           </div>
-          <table>
-            <thead>
-              <tr>
-                <th>Título</th>
-                <th>Estréia</th>
-                <th>Diretor</th>
-                <th>Episode</th>
-              </tr>
-            </thead>
-            <tbody id="tbody-js"></tbody>
-          </table>
+          <div id="chart">
+            <div id="piechart" style="width: 500px; height: 350px"></div>
+          </div>
         </div>
       </section>
     </main>
