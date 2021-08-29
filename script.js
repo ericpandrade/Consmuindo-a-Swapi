@@ -9,7 +9,7 @@ const spaceships = document.querySelector("#spaceships");
 //  Getting the api data needed for the card
 
 getData = async (params) => {
-  const getData = await fetch(`http://swapi.dev/api/${params}`);
+  const getData = await fetch(`https://swapi.dev/api/${params}`);
   const data = await getData.json();
   return data;
 };
