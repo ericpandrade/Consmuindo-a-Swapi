@@ -5,7 +5,7 @@
 }
 
 body {
-  font: 700 1rem Roboto, sans-serif;
+  font: 400 1rem Roboto, sans-serif;
   color: #2f2f2f;
 }
 
@@ -55,6 +55,7 @@ section #setting {
 
 #container {
   width: 100%;
+  background: #f5f6fa;
 }
 
 #cards {
@@ -85,6 +86,7 @@ div .card-content {
 }
 
 .textInfo {
+  font: 700 1rem Roboto, sans-serif;
   font-size: 1rem;
 }
 
@@ -101,3 +103,38 @@ div .card-content {
 }
 
 /* TABLE */
+
+#table {
+  width: max-content;
+  background: #fafffd;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+
+  padding: 1.875rem;
+  border-radius: 1rem;
+  margin: 2rem;
+}
+
+#table-introduction h1 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+#table-introduction h2 {
+  font: 400 1rem Roboto, sans-serif;
+  margin-bottom: 1.25rem;
+}
+
+th {
+  text-align: left;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #cdced3;
+}
+
+td {
+  text-align: left;
+  padding: 1.25rem 1.5rem 0 0;
+}
+
+#episodeFilm {
+  text-align: center;
+}
