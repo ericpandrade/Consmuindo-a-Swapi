@@ -9,7 +9,7 @@
 <br>
 
 <span style="font-family: 'Poppins', sans-serif;font-size:9pt">
-    Desenvolvi um projeto consumindo a API de Star Wars, aonde peguei o Layout da PapoDeDev, e fui montando o projeto, no final resultou nisso, com algumas alterações dá qual eu executei para dar uma melhorada nas informações.
+    Desenvolvi um projeto consumindo a API de Star Wars, aonde peguei o Layout da PapoDeDev, e fui montando o projeto, no final resultou nisso, com algumas alterações dá qual eu executei para dar uma melhorada nas informações. Está sem responsividade, pois o intuito era apenas treinar JavaScript, e aprender a utilizar API'S
 </span>
 
 <br>
